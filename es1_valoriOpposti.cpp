@@ -2,7 +2,7 @@
 #include <array>
 using namespace std;
 
-void inizializza(int arr[], int lung)
+void inizializza (int arr[], int lung)
 {
     for (int i = 0; i < lung; i++) // RIEMPIO L'ARRAY
     {
