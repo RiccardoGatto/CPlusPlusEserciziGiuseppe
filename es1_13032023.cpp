@@ -12,7 +12,7 @@ void inizializzaRandom(int mat[][COLONNE])
     {
         for (int j = 0; j < COLONNE; j++)
         {
-
+            
             mat[i][j] = rand() % 10;
         }
     }
@@ -46,8 +46,8 @@ void stampaMatrice(int mat[][COLONNE])
 
 int sommaKappa(int mat[][COLONNE], int num)
 {
-    int somma = 0;
-    for (int i = 0; i < RIGHE; i++)
+    int somma=0;
+    for (int i=0; i<RIGHE; i++)
     {
         somma += mat[i][num];
     }
@@ -56,13 +56,13 @@ int sommaKappa(int mat[][COLONNE], int num)
 
 int sommaRighe(int mat[][COLONNE], int num)
 {
-    int somma = 0;
-    for (int i = 0; i < COLONNE; i++)
+    int somma=0;
+    for (int i=0; i<COLONNE; i++)
     {
         somma += mat[num][i];
     }
     return somma;
-}
+} 
 
 int confrontaSomme(int mat[][COLONNE], int ind)
 {
@@ -87,8 +87,8 @@ int main()
     cin >> k;
     if ((k >= 0) and (k <= RIGHE - 1))
     {
-        int ris = confrontaSomme(matrice, k);
-        if (ris == -1)
+        int ris=confrontaSomme(matrice, k);
+        if (ris==-1)
         {
             cout << "Le somme delle righe sono tutte diverse dalla somma della colonna " << k;
         }
